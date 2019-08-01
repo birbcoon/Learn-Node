@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    //ul>li.dog$$*10 emmet makes 10 list items numbering them
+    .wrapper
+        p.hey Hello! my name is #{name}
+        - const name2 = name.toUpperCase();
+        p Hello! #{name2}
+        span#yo I am #{age} years old
+        img.dog(src="dog.jpg" alt=`${dog}`)
+
+
+    h2 Sale ends in #{h.moment().endOf('day').fromNow()}
